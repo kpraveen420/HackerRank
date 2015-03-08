@@ -3,11 +3,10 @@ package algorithms.strings;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
 
 public class Anagram {
 
-	//Solution1
+	// Solution1
 	// public static void main(String[] args) throws IOException {
 	// // Scanner s = new Scanner(System.in);
 	// StringBuffer sb = new StringBuffer();
@@ -48,13 +47,13 @@ public class Anagram {
 	// }
 	// }
 
-	//Solution2
+	// Solution2
 	public static void main(String[] args) throws IOException {
-		StringBuffer sb = new StringBuffer();
+		// StringBuffer sb = new StringBuffer();
 		BufferedReader s = new BufferedReader(new InputStreamReader(System.in));
 		int testCases = Integer.parseInt(s.readLine());
 		String line, word[] = new String[2];
-		while (testCases-- > 0) {
+		while (testCases > 0) {
 			short[] charMap = new short[26];
 			short num = 0;
 			line = s.readLine();
@@ -73,6 +72,7 @@ public class Anagram {
 			for (int i = 0; i < 26; num += charMap[i++])
 				;
 			System.out.println(num);
+			testCases--;
 
 		}
 

@@ -4,7 +4,7 @@
 package algorithms.strings;
 
 /**
- * @author nagarjunak
+ * @author PraveenK
  *
  */
 import java.io.*;
