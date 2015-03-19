@@ -57,7 +57,8 @@ public class Anagram {
 			short[] charMap = new short[26];
 			short num = 0;
 			line = s.readLine();
-			if (line.length() % 2 == 1 || line.length() == 0) {
+			if (line != null
+					&& ((line.length() & 1) == 1 || line.length() == 0)) {
 				System.out.println(-1);
 				testCases--;
 				continue;
